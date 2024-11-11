@@ -11,7 +11,6 @@ public class OrclConn {
         try {
             // 加载 Oracle JDBC 驱动
             Class.forName("oracle.jdbc.OracleDriver");
-
             // 创建到 Oracle 数据库的连接
             conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/XSCJ", "SYSTEM", "Manager123");
 
